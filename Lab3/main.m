@@ -6,22 +6,26 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
-
+#import "QuestionManager.h"
+#import "QuestionFactory.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         BOOL gameOn = YES;
         
+        QuestionFactory *questionFactory = [[QuestionFactory alloc] init];
+        QuestionManager *questionManager = [[QuestionManager alloc] init];
         ScoreKeeper *scoreKeeper = [[ScoreKeeper alloc] init];
         
         NSLog(@"MATHS!\n");
         while(gameOn) {
-            AdditionQuestion *additionQuestion = [[AdditionQuestion alloc] init];
+            Question *question = [questionFactory generateRandomQuestion];
+            [[questionManager questions] addObject:question];
             
-            NSLog(@"%@\n", [additionQuestion question]);
+            NSLog(@"%@\n", [question question]);
             NSString *userInput = [InputHandler getUserInput];
             
             if([userInput isEqualToString:@"quit"]) {
@@ -31,7 +35,7 @@ int main(int argc, const char * argv[]) {
             
             NSInteger userAnswer = [userInput intValue];
             
-            if (userAnswer == [additionQuestion answer]) {
+            if (userAnswer == [question answer]) {
                 NSLog(@"Right!");
                 [scoreKeeper setRight:[scoreKeeper right] + 1];
             } else {
@@ -40,6 +44,7 @@ int main(int argc, const char * argv[]) {
             }
             
             NSLog(@"score: %ld right %ld, wrong %ld, ratio: %ld", [scoreKeeper culcTotalRound] , [scoreKeeper right], [scoreKeeper wrong], 100 * [scoreKeeper right] / [scoreKeeper culcTotalRound]);
+            NSLog(@"%@",[questionManager timeOutput]);
         }
     }
     

@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		F207DF2528C01F23002AAF46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F207DF2428C01F23002AAF46 /* main.m */; };
 		F221CF9A28C11ECF0028840C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F221CF9928C11ECF0028840C /* main.m */; };
-		F221CFA028C125E50028840C /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F221CF9F28C125E50028840C /* AdditionQuestion.m */; };
 		F24017B228C0579400ED9D98 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = F24017B128C0579400ED9D98 /* Box.m */; };
 		F2736AAE28BD1F39004D221F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2736AAD28BD1F39004D221F /* main.m */; };
 		F284EE6528BF119A007B8CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F284EE6428BF119A007B8CC7 /* main.m */; };
-		F286BF3728C13CB60005317A /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF3628C13CB60005317A /* InputHandler.m */; };
-		F286BF3A28C140270005317A /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF3928C140270005317A /* ScoreKeeper.m */; };
+		F286BF4928C163A20005317A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF4828C163A20005317A /* main.m */; };
+		F286BF4D28C163EC0005317A /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF3928C140270005317A /* ScoreKeeper.m */; };
+		F286BF4E28C163EC0005317A /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F221CF9F28C125E50028840C /* AdditionQuestion.m */; };
+		F286BF4F28C163EC0005317A /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF3628C13CB60005317A /* InputHandler.m */; };
+		F286BF5228C1642C0005317A /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF5128C1642C0005317A /* ScoreKeeper.m */; };
+		F286BF5428C164400005317A /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF5328C164400005317A /* InputHandler.m */; };
+		F286BF5728C164500005317A /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF5628C164500005317A /* Question.m */; };
+		F286BF5A28C167860005317A /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF5928C167860005317A /* QuestionManager.m */; };
+		F286BF5D28C17C570005317A /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF5C28C17C570005317A /* AdditionQuestion.m */; };
+		F286BF6028C17C660005317A /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF5F28C17C660005317A /* SubtractionQuestion.m */; };
+		F286BF6328C1828D0005317A /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF6228C1828D0005317A /* QuestionFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +62,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		F286BF3D28C163430005317A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +90,21 @@
 		F286BF3628C13CB60005317A /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		F286BF3828C140270005317A /* ScoreKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
 		F286BF3928C140270005317A /* ScoreKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
+		F286BF3F28C163430005317A /* Lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab4; sourceTree = BUILT_PRODUCTS_DIR; };
+		F286BF4828C163A20005317A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Lab3/main.m; sourceTree = SOURCE_ROOT; };
+		F286BF5028C163FE0005317A /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreKeeper.h; path = Lab3/ScoreKeeper.h; sourceTree = SOURCE_ROOT; };
+		F286BF5128C1642C0005317A /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScoreKeeper.m; path = Lab3/ScoreKeeper.m; sourceTree = SOURCE_ROOT; };
+		F286BF5328C164400005317A /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputHandler.m; path = Lab3/InputHandler.m; sourceTree = SOURCE_ROOT; };
+		F286BF5528C1644A0005317A /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = Lab3/Question.h; sourceTree = SOURCE_ROOT; };
+		F286BF5628C164500005317A /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = Lab3/Question.m; sourceTree = SOURCE_ROOT; };
+		F286BF5828C167860005317A /* QuestionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
+		F286BF5928C167860005317A /* QuestionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
+		F286BF5B28C17C570005317A /* AdditionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
+		F286BF5C28C17C570005317A /* AdditionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		F286BF5E28C17C660005317A /* SubtractionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubtractionQuestion.h; sourceTree = "<group>"; };
+		F286BF5F28C17C660005317A /* SubtractionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubtractionQuestion.m; sourceTree = "<group>"; };
+		F286BF6128C1828D0005317A /* QuestionFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
+		F286BF6228C1828D0005317A /* QuestionFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +130,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F284EE5F28BF119A007B8CC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F286BF3C28C163430005317A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,6 +177,7 @@
 				F284EE6328BF119A007B8CC7 /* Lab1 */,
 				F207DF2328C01F23002AAF46 /* Lab2 */,
 				F221CF9828C11ECF0028840C /* Lab3 */,
+				F286BF4028C163430005317A /* Lab4 */,
 				F2736AAB28BD1F39004D221F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,6 +189,7 @@
 				F284EE6228BF119A007B8CC7 /* Lab1 */,
 				F207DF2228C01F23002AAF46 /* Lab2 */,
 				F221CF9728C11ECF0028840C /* Lab3 */,
+				F286BF3F28C163430005317A /* Lab4 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +208,27 @@
 				F284EE6428BF119A007B8CC7 /* main.m */,
 			);
 			path = Lab1;
+			sourceTree = "<group>";
+		};
+		F286BF4028C163430005317A /* Lab4 */ = {
+			isa = PBXGroup;
+			children = (
+				F286BF5628C164500005317A /* Question.m */,
+				F286BF5528C1644A0005317A /* Question.h */,
+				F286BF5B28C17C570005317A /* AdditionQuestion.h */,
+				F286BF5C28C17C570005317A /* AdditionQuestion.m */,
+				F286BF5E28C17C660005317A /* SubtractionQuestion.h */,
+				F286BF5F28C17C660005317A /* SubtractionQuestion.m */,
+				F286BF6128C1828D0005317A /* QuestionFactory.h */,
+				F286BF6228C1828D0005317A /* QuestionFactory.m */,
+				F286BF5328C164400005317A /* InputHandler.m */,
+				F286BF5128C1642C0005317A /* ScoreKeeper.m */,
+				F286BF5028C163FE0005317A /* ScoreKeeper.h */,
+				F286BF4828C163A20005317A /* main.m */,
+				F286BF5828C167860005317A /* QuestionManager.h */,
+				F286BF5928C167860005317A /* QuestionManager.m */,
+			);
+			path = Lab4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +302,23 @@
 			productReference = F284EE6228BF119A007B8CC7 /* Lab1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		F286BF3E28C163430005317A /* Lab4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F286BF4328C163430005317A /* Build configuration list for PBXNativeTarget "Lab4" */;
+			buildPhases = (
+				F286BF3B28C163430005317A /* Sources */,
+				F286BF3C28C163430005317A /* Frameworks */,
+				F286BF3D28C163430005317A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab4;
+			productName = Lab4;
+			productReference = F286BF3F28C163430005317A /* Lab4 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -261,6 +340,9 @@
 					F284EE6128BF119A007B8CC7 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
+					F286BF3E28C163430005317A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 				};
 			};
 			buildConfigurationList = F2736AA528BD1F39004D221F /* Build configuration list for PBXProject "TestObjc" */;
@@ -280,6 +362,7 @@
 				F284EE6128BF119A007B8CC7 /* Lab1 */,
 				F207DF2128C01F23002AAF46 /* Lab2 */,
 				F221CF9628C11ECF0028840C /* Lab3 */,
+				F286BF3E28C163430005317A /* Lab4 */,
 			);
 		};
 /* End PBXProject section */
@@ -298,10 +381,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F286BF3A28C140270005317A /* ScoreKeeper.m in Sources */,
+				F286BF4D28C163EC0005317A /* ScoreKeeper.m in Sources */,
+				F286BF4E28C163EC0005317A /* AdditionQuestion.m in Sources */,
 				F221CF9A28C11ECF0028840C /* main.m in Sources */,
-				F286BF3728C13CB60005317A /* InputHandler.m in Sources */,
-				F221CFA028C125E50028840C /* AdditionQuestion.m in Sources */,
+				F286BF4F28C163EC0005317A /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +401,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F284EE6528BF119A007B8CC7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F286BF3B28C163430005317A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F286BF5A28C167860005317A /* QuestionManager.m in Sources */,
+				F286BF5D28C17C570005317A /* AdditionQuestion.m in Sources */,
+				F286BF6028C17C660005317A /* SubtractionQuestion.m in Sources */,
+				F286BF5228C1642C0005317A /* ScoreKeeper.m in Sources */,
+				F286BF6328C1828D0005317A /* QuestionFactory.m in Sources */,
+				F286BF5728C164500005317A /* Question.m in Sources */,
+				F286BF5428C164400005317A /* InputHandler.m in Sources */,
+				F286BF4928C163A20005317A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +595,22 @@
 			};
 			name = Release;
 		};
+		F286BF4428C163430005317A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F286BF4528C163430005317A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,6 +655,15 @@
 			buildConfigurations = (
 				F284EE6728BF119A007B8CC7 /* Debug */,
 				F284EE6828BF119A007B8CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F286BF4328C163430005317A /* Build configuration list for PBXNativeTarget "Lab4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F286BF4428C163430005317A /* Debug */,
+				F286BF4528C163430005317A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

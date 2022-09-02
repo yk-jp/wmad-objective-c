@@ -1,19 +1,15 @@
 //
-//  AdditionQuestion.h
-//  Lab3
+//  SubtractionQuestion.h
+//  Lab4
 //
 //  Created by Yusuke K on 2022-09-01.
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Question.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AdditionQuestion : NSObject
-
-@property NSString *question;
-@property NSInteger answer;
-
+@interface SubtractionQuestion : Question
 
 @end
 
