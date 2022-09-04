@@ -6,7 +6,6 @@
 //
 
 #import "QuestionManager.h"
-#import "Question.h"
 
 @implementation QuestionManager {
     

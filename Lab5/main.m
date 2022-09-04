@@ -21,26 +21,27 @@ int main(int argc, const char * argv[]) {
         while(isProcessing) {
             NSString *userInput = [inputCollector inputForPrompt:@"\nWhat would you like to do next?\nnew - Create a new contact\nlist - List all contacts\nquit - Exit Application"];
             
-            if([userInput isEqualToString:@"q"]) {
+            if([userInput isEqualToString:@"q"] || [userInput isEqualToString:@"quit"]) {
                 isProcessing = NO;
                 NSLog(@"adieu");
                 continue;
             }
             
             if([userInput isEqualToString:@"new"]) {
-                NSString *name = [inputCollector inputForPrompt:@"Enter name"];
-                NSString *email = [inputCollector inputForPrompt:@"Enter email"];
+                NSString *name = [inputCollector inputForPrompt:@"Enter name\n"];
+                NSString *email = [inputCollector inputForPrompt:@"Enter email\n"];
                 
                 Contact *newContact = [[Contact alloc] initWithName:name email: email];
-                [[contactList data ] addObject: newContact];
+                [contactList addContactWithContact : newContact];
                 continue;
             }
             
+            if([userInput isEqualToString:@"list"]) {
+                [contactList showContact];
+                continue;
+            }
             
         }
-        
-        
-        
     }
     return 0;
 }
