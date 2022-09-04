@@ -10,7 +10,7 @@
 @implementation SubtractionQuestion
 
 -(instancetype) init {
-    if (self = [super init]) {
+    if (self) {
        [self generateQuestion];
     }
     
