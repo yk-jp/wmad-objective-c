@@ -9,4 +9,13 @@
 
 @implementation ContactList
 
+-(instancetype) init {
+    self = [super init];
+    if (self) {
+        _data = [NSMutableArray new];
+    }
+    
+    return self;
+}
+
 @end
