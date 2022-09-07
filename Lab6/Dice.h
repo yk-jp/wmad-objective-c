@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *number;
 
--(void) setNumber;
+-(void) setRandomNumber;
 -(NSString*) getNumber;
 
 @end

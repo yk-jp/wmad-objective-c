@@ -24,6 +24,7 @@
 		F286BF6028C17C660005317A /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF5F28C17C660005317A /* SubtractionQuestion.m */; };
 		F286BF6328C1828D0005317A /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF6228C1828D0005317A /* QuestionFactory.m */; };
 		F2B0EFEC28C917200004FCB0 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0EFEB28C917200004FCB0 /* InputCollector.m */; };
+		F2B0EFEF28C91C160004FCB0 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0EFEE28C91C160004FCB0 /* GameController.m */; };
 		F2B66CD928C461A1009346A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B66CD828C461A1009346A7 /* main.m */; };
 		F2B66CDF28C461AD009346A7 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B66CDE28C461AD009346A7 /* Contact.m */; };
 		F2B66CE228C461B5009346A7 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B66CE128C461B5009346A7 /* ContactList.m */; };
@@ -132,6 +133,8 @@
 		F286BF6228C1828D0005317A /* QuestionFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
 		F2B0EFEA28C9170C0004FCB0 /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputCollector.h; path = Lab5/InputCollector.h; sourceTree = SOURCE_ROOT; };
 		F2B0EFEB28C917200004FCB0 /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputCollector.m; path = Lab5/InputCollector.m; sourceTree = SOURCE_ROOT; };
+		F2B0EFED28C91C160004FCB0 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		F2B0EFEE28C91C160004FCB0 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		F2B66CD628C461A1009346A7 /* Lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab5; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B66CD828C461A1009346A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2B66CDD28C461AD009346A7 /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
@@ -308,6 +311,8 @@
 				F2B0EFEB28C917200004FCB0 /* InputCollector.m */,
 				F2B0EFEA28C9170C0004FCB0 /* InputCollector.h */,
 				F2F5623328C909ED0005C61A /* main.m */,
+				F2B0EFED28C91C160004FCB0 /* GameController.h */,
+				F2B0EFEE28C91C160004FCB0 /* GameController.m */,
 				F2F5623828C90A7A0005C61A /* Dice.h */,
 				F2F5623928C90A7A0005C61A /* Dice.m */,
 			);
@@ -560,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B0EFEC28C917200004FCB0 /* InputCollector.m in Sources */,
+				F2B0EFEF28C91C160004FCB0 /* GameController.m in Sources */,
 				F2F5623A28C90A7A0005C61A /* Dice.m in Sources */,
 				F2F5623428C909ED0005C61A /* main.m in Sources */,
 			);

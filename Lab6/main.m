@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "InputCollector.h"
 #import "Dice.h"
+#import "GameController.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -21,6 +22,8 @@ int main(int argc, const char * argv[]) {
         
         NSMutableArray *dices = [NSMutableArray arrayWithObjects:dice1,dice2,dice3,dice4,dice5, nil];
         
+        GameController *gameC = [[GameController alloc] initWithDices:dices];
+        
         BOOL isProcessing = YES;
         
         while(isProcessing) {
@@ -31,20 +34,24 @@ int main(int argc, const char * argv[]) {
                 continue;
             }
             
-            
             if([userInput isEqualToString:@"roll"]) {
                 
-                for(int i = 0; i < [dices count]; i++) {
-                    [[dices objectAtIndex: i] setNumber];
-                    NSLog(@"%@",[[dices objectAtIndex: i] getNumber]);
+                for(int i = 0; i < [[gameC dices] count]; i++) {
+                    [[[gameC dices] objectAtIndex: i] setRandomNumber];
+                    NSLog(@"%@",[[[gameC dices] objectAtIndex: i] getNumber]);
                 }
-                
                 
                 continue;
             }
             
-            
-            
+            if([userInput isEqualToString:@"hold"]) {
+                userInput = [inputCollector inputForPrompt:@"\nEnter the number of the dice:"];
+                [gameC holdDie: [userInput intValue]];
+                for(int i = 0; i < [[gameC dices] count]; i++) {
+                    NSLog(@"%@",[[[gameC dices] objectAtIndex: i] getNumber]);
+                }
+                continue;
+            }
             
         }
     }

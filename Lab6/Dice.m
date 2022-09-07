@@ -22,11 +22,10 @@
     return self;
 }
 
--(void) setNumber {
+-(void) setRandomNumber {
     NSInteger rand = arc4random_uniform((int)[NUMBER count]);
     _number = NUMBER[rand];
 }
-
 
 -(NSString*) getNumber{
     return _number;
