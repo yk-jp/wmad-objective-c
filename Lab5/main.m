@@ -40,7 +40,6 @@ int main(int argc, const char * argv[]) {
                 [contactList showContact];
                 continue;
             }
-            
         }
     }
     return 0;
