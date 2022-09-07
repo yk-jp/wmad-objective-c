@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *number;
 
+-(void) setNumber;
+-(NSString*) getNumber;
+
 @end
 
 NS_ASSUME_NONNULL_END
