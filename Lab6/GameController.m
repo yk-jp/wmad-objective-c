@@ -22,7 +22,7 @@
     return self;
 }
 
--(void) holdDie: (NSInteger) idx {
+-(void) holdDice: (NSInteger) idx {
     idx = idx-1;
     Dice *updateDice = _dices[idx];
     
@@ -30,8 +30,8 @@
     
     if(![_heldDices objectForKey:key]) {
        Dice *heldDice = [Dice new];
-       NSString *heldNumber = [[NSString alloc] initWithFormat:@"[%@]", [updateDice getNumber]];
-       [heldDice setNumber: heldNumber];
+       NSString *heldNumber = [[NSString alloc] initWithFormat:@"[%@]", [updateDice dval]];
+       [heldDice setDval: heldNumber];
        _heldDices[key] = heldDice;
     }
     
@@ -40,5 +40,19 @@
     _dices[idx] = tmp;
 }
 
+-(void) resetDice {
+    _heldDices = [NSMutableDictionary new];
+    
+    for(int i = 0; i < [_dices count]; i++) {
+        NSString *number = [_dices[i] dval];
+        
+        if([number length] > 1) {
+           unichar c = (unichar)[number characterAtIndex:1];
+           number = [NSString stringWithCharacters:&c length:1];
+        }
+        
+        [_dices[i] setDval: number];
+    }
+}
 
 @end

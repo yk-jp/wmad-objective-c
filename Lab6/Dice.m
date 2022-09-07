@@ -16,7 +16,7 @@
     self = [super init];
     if(self) {
         NUMBER = @[@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅"];
-        _number = @"";
+        _dval = @"";
     }
     
     return self;
@@ -24,11 +24,11 @@
 
 -(void) setRandomNumber {
     NSInteger rand = arc4random_uniform((int)[NUMBER count]);
-    _number = NUMBER[rand];
+    _dval = NUMBER[rand];
 }
 
--(NSString*) getNumber{
-    return _number;
-}
+//-(NSString*) getNumber{
+//    return _dVal;
+//}
 
 @end

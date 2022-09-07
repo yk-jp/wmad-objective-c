@@ -31,28 +31,29 @@ int main(int argc, const char * argv[]) {
             
             if([userInput isEqualToString:@"done"]) {
                 isProcessing = NO;
-                continue;
-            }
-            
-            if([userInput isEqualToString:@"roll"]) {
                 
+            } else if([userInput isEqualToString:@"roll"]) {
                 for(int i = 0; i < [[gameC dices] count]; i++) {
                     [[[gameC dices] objectAtIndex: i] setRandomNumber];
-                    NSLog(@"%@",[[[gameC dices] objectAtIndex: i] getNumber]);
+                    NSLog(@"%@",[[[gameC dices] objectAtIndex: i] dval]);
                 }
                 
-                continue;
-            }
-            
-            if([userInput isEqualToString:@"hold"]) {
+            } else if([userInput isEqualToString:@"hold"]) {
                 userInput = [inputCollector inputForPrompt:@"\nEnter the number of the dice:"];
-                [gameC holdDie: [userInput intValue]];
+                [gameC holdDice: [userInput intValue]];
                 for(int i = 0; i < [[gameC dices] count]; i++) {
-                    NSLog(@"%@",[[[gameC dices] objectAtIndex: i] getNumber]);
+                    NSLog(@"%@",[[[gameC dices] objectAtIndex: i] dval]);
                 }
-                continue;
+                
+            } else if([userInput isEqualToString:@"reset"]) {
+                [gameC resetDice];
+                for(int i = 0; i < [[gameC dices] count]; i++) {
+                    NSLog(@"%@",[[[gameC dices] objectAtIndex: i] dval]);
+                }
+                
             }
             
+            continue;
         }
     }
     return 0;

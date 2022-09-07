@@ -11,10 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Dice : NSObject
 
-@property NSString *number;
+@property NSString *dval;
 
 -(void) setRandomNumber;
--(NSString*) getNumber;
+//-(NSString*) getNumber;
 
 @end
 
