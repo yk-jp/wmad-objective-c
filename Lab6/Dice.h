@@ -12,9 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Dice : NSObject
 
 @property NSString *dval;
+@property NSInteger dNum;
 
 -(void) setRandomNumber;
-//-(NSString*) getNumber;
+-(NSArray*) getNUMBER;
 
 @end
 

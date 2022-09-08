@@ -9,26 +9,28 @@
 
 //⚀⚁⚂⚃⚄⚅
 @implementation Dice {
-    NSArray *NUMBER;
+    NSArray *_NUMBER;
 }
 
 -(instancetype) init {
     self = [super init];
     if(self) {
-        NUMBER = @[@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅"];
+        _NUMBER = @[@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅"];
         _dval = @"";
+        _dNum = -1;
     }
     
     return self;
 }
 
 -(void) setRandomNumber {
-    NSInteger rand = arc4random_uniform((int)[NUMBER count]);
-    _dval = NUMBER[rand];
+    NSInteger rand = arc4random_uniform((int)[_NUMBER count]);
+    _dval = _NUMBER[rand];
+    _dNum = rand + 1;
 }
 
-//-(NSString*) getNumber{
-//    return _dVal;
-//}
+-(NSArray*) getNUMBER {
+    return _NUMBER;
+}
 
 @end

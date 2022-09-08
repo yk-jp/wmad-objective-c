@@ -17,8 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSMutableDictionary *heldDices;
 
 -(void) holdDice:(NSInteger) idx;
-
 -(void) resetDice;
+-(NSInteger) culcTotalOfHeldDices;
+-(void) displayStatus;
 
 @end
 
