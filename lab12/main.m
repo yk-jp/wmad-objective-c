@@ -11,6 +11,7 @@
 #import "PaypalPaymentService.h"
 #import "StripePaymentService.h"
 #import "AmazonPaymentService.h"
+#import "ApplePaymentService.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -19,7 +20,7 @@ int main(int argc, const char * argv[]) {
         NSInteger cost = arc4random_uniform(901) + 100;
         NSString *userInput = [inputCollector inputForPrompt:
                                [NSString stringWithFormat: @"\nThank you for shopping at Acme.com Your total today is$%ld Please select your payment method: 1: Paypal, 2: Stripe, 3: Amazon\n",cost]]
-                               ;
+        ;
         
         PaymentGateway *paymentGateWay = [[PaymentGateway alloc ] init];
         
@@ -41,6 +42,12 @@ int main(int argc, const char * argv[]) {
             case 3: {
                 AmazonPaymentService *amazonPaymentService = [AmazonPaymentService new];
                 paymentGateWay.paymentDelegate = amazonPaymentService;
+                [paymentGateWay processPaymentAmount: cost];
+                break;
+            }
+            case 4: {
+                ApplePaymentService *applePaymentService = [ApplePaymentService new];
+                paymentGateWay.paymentDelegate = applePaymentService;
                 [paymentGateWay processPaymentAmount: cost];
                 break;
             }
