@@ -23,7 +23,6 @@
 		F286BF5D28C17C570005317A /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF5C28C17C570005317A /* AdditionQuestion.m */; };
 		F286BF6028C17C660005317A /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF5F28C17C660005317A /* SubtractionQuestion.m */; };
 		F286BF6328C1828D0005317A /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F286BF6228C1828D0005317A /* QuestionFactory.m */; };
-		F2B0EFEC28C917200004FCB0 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0EFEB28C917200004FCB0 /* InputCollector.m */; };
 		F2B0EFEF28C91C160004FCB0 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0EFEE28C91C160004FCB0 /* GameController.m */; };
 		F2B0F00228C99CD20004FCB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0F00128C99CD20004FCB0 /* main.m */; };
 		F2B0F00B28C99E170004FCB0 /* NSString+NSStringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0F00A28C99E170004FCB0 /* NSString+NSStringHelper.m */; };
@@ -31,6 +30,14 @@
 		F2B66CDF28C461AD009346A7 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B66CDE28C461AD009346A7 /* Contact.m */; };
 		F2B66CE228C461B5009346A7 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B66CE128C461B5009346A7 /* ContactList.m */; };
 		F2B66CE828C466C3009346A7 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B66CE728C466C3009346A7 /* InputCollector.m */; };
+		F2CA180F28D0E8430098857D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA180E28D0E8430098857D /* main.m */; };
+		F2CA181428D0EA590098857D /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0EFEB28C917200004FCB0 /* InputCollector.m */; };
+		F2CA182328D0EBCE0098857D /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA182228D0EBCE0098857D /* InputCollector.m */; };
+		F2CA182628D0F21A0098857D /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA182528D0F21A0098857D /* PaymentGateway.m */; };
+		F2CA182928D0F3B30098857D /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA182828D0F3B30098857D /* PaypalPaymentService.m */; };
+		F2CA182C28D0F3BE0098857D /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA182B28D0F3BE0098857D /* StripePaymentService.m */; };
+		F2CA182F28D0F3C90098857D /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA182E28D0F3C90098857D /* AmazonPaymentService.m */; };
+		F2CA183228D126550098857D /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA183128D126550098857D /* ApplePaymentService.m */; };
 		F2F5623428C909ED0005C61A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F5623328C909ED0005C61A /* main.m */; };
 		F2F5623A28C90A7A0005C61A /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F5623928C90A7A0005C61A /* Dice.m */; };
 /* End PBXBuildFile section */
@@ -99,6 +106,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		F2CA180A28D0E8430098857D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		F2F5622F28C909ED0005C61A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,8 +158,8 @@
 		F286BF5F28C17C660005317A /* SubtractionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubtractionQuestion.m; sourceTree = "<group>"; };
 		F286BF6128C1828D0005317A /* QuestionFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
 		F286BF6228C1828D0005317A /* QuestionFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
-		F2B0EFEA28C9170C0004FCB0 /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputCollector.h; path = Lab5/InputCollector.h; sourceTree = SOURCE_ROOT; };
-		F2B0EFEB28C917200004FCB0 /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputCollector.m; path = Lab5/InputCollector.m; sourceTree = SOURCE_ROOT; };
+		F2B0EFEA28C9170C0004FCB0 /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputCollector.h; path = Lab6/InputCollector.h; sourceTree = SOURCE_ROOT; };
+		F2B0EFEB28C917200004FCB0 /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputCollector.m; path = Lab6/InputCollector.m; sourceTree = SOURCE_ROOT; };
 		F2B0EFED28C91C160004FCB0 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
 		F2B0EFEE28C91C160004FCB0 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		F2B0EFFF28C99CD20004FCB0 /* Lab7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab7; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +174,20 @@
 		F2B66CE128C461B5009346A7 /* ContactList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
 		F2B66CE628C466C3009346A7 /* InputCollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
 		F2B66CE728C466C3009346A7 /* InputCollector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
+		F2CA180C28D0E8430098857D /* lab12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab12; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CA180E28D0E8430098857D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2CA182128D0EBCE0098857D /* InputCollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
+		F2CA182228D0EBCE0098857D /* InputCollector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
+		F2CA182428D0F21A0098857D /* PaymentGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		F2CA182528D0F21A0098857D /* PaymentGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
+		F2CA182728D0F3B30098857D /* PaypalPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaypalPaymentService.h; sourceTree = "<group>"; };
+		F2CA182828D0F3B30098857D /* PaypalPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaypalPaymentService.m; sourceTree = "<group>"; };
+		F2CA182A28D0F3BE0098857D /* StripePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StripePaymentService.h; sourceTree = "<group>"; };
+		F2CA182B28D0F3BE0098857D /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
+		F2CA182D28D0F3C90098857D /* AmazonPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
+		F2CA182E28D0F3C90098857D /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		F2CA183028D126550098857D /* ApplePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
+		F2CA183128D126550098857D /* ApplePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
 		F2F5623128C909ED0005C61A /* Lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab6; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F5623328C909ED0005C61A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2F5623828C90A7A0005C61A /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
@@ -214,6 +244,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2CA180928D0E8430098857D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2F5622E28C909ED0005C61A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +296,7 @@
 				F2B66CD728C461A1009346A7 /* Lab5 */,
 				F2F5623228C909ED0005C61A /* Lab6 */,
 				F2B0F00028C99CD20004FCB0 /* Lab7 */,
+				F2CA180D28D0E8430098857D /* lab12 */,
 				F2736AAB28BD1F39004D221F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -274,6 +312,7 @@
 				F2B66CD628C461A1009346A7 /* Lab5 */,
 				F2F5623128C909ED0005C61A /* Lab6 */,
 				F2B0EFFF28C99CD20004FCB0 /* Lab7 */,
+				F2CA180C28D0E8430098857D /* lab12 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -339,12 +378,32 @@
 			path = Lab5;
 			sourceTree = "<group>";
 		};
+		F2CA180D28D0E8430098857D /* lab12 */ = {
+			isa = PBXGroup;
+			children = (
+				F2CA180E28D0E8430098857D /* main.m */,
+				F2CA182728D0F3B30098857D /* PaypalPaymentService.h */,
+				F2CA182828D0F3B30098857D /* PaypalPaymentService.m */,
+				F2CA183028D126550098857D /* ApplePaymentService.h */,
+				F2CA183128D126550098857D /* ApplePaymentService.m */,
+				F2CA182A28D0F3BE0098857D /* StripePaymentService.h */,
+				F2CA182B28D0F3BE0098857D /* StripePaymentService.m */,
+				F2CA182D28D0F3C90098857D /* AmazonPaymentService.h */,
+				F2CA182E28D0F3C90098857D /* AmazonPaymentService.m */,
+				F2CA182428D0F21A0098857D /* PaymentGateway.h */,
+				F2CA182528D0F21A0098857D /* PaymentGateway.m */,
+				F2CA182128D0EBCE0098857D /* InputCollector.h */,
+				F2CA182228D0EBCE0098857D /* InputCollector.m */,
+			);
+			path = lab12;
+			sourceTree = "<group>";
+		};
 		F2F5623228C909ED0005C61A /* Lab6 */ = {
 			isa = PBXGroup;
 			children = (
+				F2F5623328C909ED0005C61A /* main.m */,
 				F2B0EFEB28C917200004FCB0 /* InputCollector.m */,
 				F2B0EFEA28C9170C0004FCB0 /* InputCollector.h */,
-				F2F5623328C909ED0005C61A /* main.m */,
 				F2B0EFED28C91C160004FCB0 /* GameController.h */,
 				F2B0EFEE28C91C160004FCB0 /* GameController.m */,
 				F2F5623828C90A7A0005C61A /* Dice.h */,
@@ -475,6 +534,23 @@
 			productReference = F2B66CD628C461A1009346A7 /* Lab5 */;
 			productType = "com.apple.product-type.tool";
 		};
+		F2CA180B28D0E8430098857D /* lab12 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2CA181228D0E8430098857D /* Build configuration list for PBXNativeTarget "lab12" */;
+			buildPhases = (
+				F2CA180828D0E8430098857D /* Sources */,
+				F2CA180928D0E8430098857D /* Frameworks */,
+				F2CA180A28D0E8430098857D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lab12;
+			productName = lab12;
+			productReference = F2CA180C28D0E8430098857D /* lab12 */;
+			productType = "com.apple.product-type.tool";
+		};
 		F2F5623028C909ED0005C61A /* Lab6 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2F5623728C909ED0005C61A /* Build configuration list for PBXNativeTarget "Lab6" */;
@@ -522,6 +598,9 @@
 					F2B66CD528C461A1009346A7 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
+					F2CA180B28D0E8430098857D = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					F2F5623028C909ED0005C61A = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -548,6 +627,7 @@
 				F2B66CD528C461A1009346A7 /* Lab5 */,
 				F2F5623028C909ED0005C61A /* Lab6 */,
 				F2B0EFFE28C99CD20004FCB0 /* Lab7 */,
+				F2CA180B28D0E8430098857D /* lab12 */,
 			);
 		};
 /* End PBXProject section */
@@ -624,13 +704,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2CA180828D0E8430098857D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CA182F28D0F3C90098857D /* AmazonPaymentService.m in Sources */,
+				F2CA182C28D0F3BE0098857D /* StripePaymentService.m in Sources */,
+				F2CA182628D0F21A0098857D /* PaymentGateway.m in Sources */,
+				F2CA183228D126550098857D /* ApplePaymentService.m in Sources */,
+				F2CA182328D0EBCE0098857D /* InputCollector.m in Sources */,
+				F2CA180F28D0E8430098857D /* main.m in Sources */,
+				F2CA182928D0F3B30098857D /* PaypalPaymentService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2F5622D28C909ED0005C61A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2B0EFEC28C917200004FCB0 /* InputCollector.m in Sources */,
 				F2B0EFEF28C91C160004FCB0 /* GameController.m in Sources */,
 				F2F5623A28C90A7A0005C61A /* Dice.m in Sources */,
+				F2CA181428D0EA590098857D /* InputCollector.m in Sources */,
 				F2F5623428C909ED0005C61A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -859,6 +953,24 @@
 			};
 			name = Release;
 		};
+		F2CA181028D0E8430098857D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2CA181128D0E8430098857D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F2F5623528C909ED0005C61A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -946,6 +1058,15 @@
 			buildConfigurations = (
 				F2B66CDA28C461A1009346A7 /* Debug */,
 				F2B66CDB28C461A1009346A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2CA181228D0E8430098857D /* Build configuration list for PBXNativeTarget "lab12" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CA181028D0E8430098857D /* Debug */,
+				F2CA181128D0E8430098857D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
