@@ -11,4 +11,9 @@
 -(void)processPaymentAmount: (NSInteger) amount {
     NSLog(@"Amazon: $%ld" , amount);
 }
+
+-(BOOL)canProcessPayment {
+    return arc4random_uniform(1);
+}
+
 @end

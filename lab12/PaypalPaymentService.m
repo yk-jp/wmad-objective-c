@@ -13,4 +13,8 @@
     NSLog(@"paypal: $%ld" , amount);
 }
 
+-(BOOL)canProcessPayment {
+    return arc4random_uniform(1);
+}
+
 @end

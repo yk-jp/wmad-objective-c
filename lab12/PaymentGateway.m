@@ -14,6 +14,11 @@
 
 
 -(void)processPaymentAmount: (NSInteger) amount {
+    if(![self.paymentDelegate canProcessPayment]){
+        NSLog(@"We owe you an apology. your payment cannot be processed.");
+        return;
+    }
+    
     [self.paymentDelegate processPaymentAmount:amount];
 }
 
